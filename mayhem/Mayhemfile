@@ -1,0 +1,8 @@
+project: charset-normalizer
+target: fuzz-charset-normalizer
+
+image: ghcr.io/matl4c/fuzz-charset-normalizer:latest
+
+cmds:
+  - cmd: /src/mayhem/fuzz-charset-normalizer.py
+    libfuzzer: true
